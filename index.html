@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <form action="#" class="form" id="form">
+      <div class="form__item">
+        <label for="title">Title</label>
+        <input id="title" class="form__item__input" type="text" />
+        <span class="validity">Title must contain at least 1 character.</span>
+      </div>
+      <div class="form__item">
+        <label for="author">Author</label>
+        <input id="author" class="form__item__input" type="text" />
+        <span class="validity">Author must contain at least 3 characters</span>
+      </div>
+      <div class="form__item">
+        <label for="priority">Priority (1 to 5)</label>
+        <input id="priority" class="form__item__input" type="number" min="1" max="5" />
+        <span class="validity">Priority must be between 1 and 5</span>
+      </div>
+      <div class="form__item">
+        <label for="category">Category</label>
+        <select id="category" class="form__item__input">
+          <option value="Fantasy">Fantasy</option>
+          <option value="Action">Action</option>
+          <option value="Crime">Crime</option>
+        </select>
+      </div>
+      <button type="submit" class="submit__button">Add</button>
+    </form>
+    <div class="wrapper hidden">
+      <table class="wrapper__table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Priority</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
